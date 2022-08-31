@@ -1,6 +1,6 @@
 ### SAPPHIRE model builder
 
-This repository contains python code that allows the user to develop neural network classifiers for promoter prediction. The code can be modified and tailored to one's needs using the information below. 
+This repository contains python code that allows the user to develop neural network classifiers for promoter prediction. The code can be modified and tailored to one's needs using the information below. Execute the script train_CNN.py to create new models.
 
 #### Required input files
 A genbank file, a file with coordinates of transcription start sites (TSSs) and a file with coordinates of background sequences for training are required to use the script 'train_CNN.py'. Input should be formated like the examples found in the data folder.  
@@ -13,6 +13,9 @@ The architecture of choice can be specified in line 111. The CNN architecture wa
 - CNN into RNN (build_CNN_LSTM)
 - RNN into CNN into RNN (build_LSTM_CNN_LSTM) 
 
+#### New model location
+Every new model will be saved as 'models/model_TSS.h5'. This can be modified in line 130.
+
 #### Class weights 
-Class weights for training are programmed to compensate for different amounts of TSS and background data for training. This can be modified in line 158
+Class weights for training are programmed to compensate for different amounts of TSS and background data for training. This can be modified in line 158.
 
