@@ -14,5 +14,5 @@ The architecture of choice can be specified in line 111. The CNN architecture wa
 - RNN into CNN into RNN (build_LSTM_CNN_LSTM) 
 
 #### Class weights 
-Class weights for training are set to compensate for different amounts of TSS and background data for training. This can be modified in line 158
+Class weights for training are programmed to compensate for different amounts of TSS and background data for training. This can be modified in line 158
 
